@@ -1,0 +1,1 @@
+> gcc -c ./Ex2_2_PGCD.c -o ./pgcd -D MISEAUPOINT
