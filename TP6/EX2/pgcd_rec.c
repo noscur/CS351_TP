@@ -2,18 +2,15 @@
 #include <stdlib.h>
 
 int pgcd(int a, int b){
-    int r = abs(a - b);
-    switch(b){
-        case 0:
-            return a;
-        default:
-            pgcd(b,r);
-    }
+    if (b != 0)
+       return pgcd(b, a%b);
+    else 
+       return a;
 }
 
 
 int main(){
-    int res = pgcd(126,90);
+    int res = pgcd(126,-90);
     printf("Res = %d\n",res);
     return 0;
 }
