@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int annee_bissextile(int annee) {
-    if((annee%4==0) && (annee%100!=0 || annee%400==0)){
+    if(((annee%4==0) && (annee%100!=0) || annee%400==0)){
         printf("%d est bissextile", annee);
     }
     else {

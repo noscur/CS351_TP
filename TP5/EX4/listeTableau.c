@@ -48,7 +48,7 @@ void insererElement(int x, liste l){
 			l[indice_act].suivant = indice_New_elmt;
 		} 
 		else {
-			printf("Element déjà présent\n");
+			printf("Element deja present\n");
 		}
     }
 }

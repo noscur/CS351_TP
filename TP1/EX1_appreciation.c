@@ -15,9 +15,12 @@ int appreciationIfElse(char appreciation) {
     else if (appreciation=='D'){
          printf("Passable\n");
     } 
-    else {
+    else if (appreciation=='E'){
          printf("Insuffisant\n");
-    } 
+    }
+    else {
+         printf("Erreur de note\n");
+    }
     return 0;
 } 
 /* If en séquence sans imbrication*/
@@ -37,28 +40,35 @@ int appreciationIfSequence(char appreciation) {
     if (appreciation=='E'){
          printf("Insuffisant\n");
     } 
+    if ((appreciation<'A') && (appreciation>'E')){
+         printf("Erreur de note\n");
+    }
     return 0;
 } 
 
 /* Switch case */
 
 int appreciationSwitch(char appreciation){
-    switch (appreciation){
-        case 'A':
-            printf("Très bien\n");
-            break;
-        case 'B':
-            printf("Bien\n");
-            break;
-        case 'C':
-            printf("Assez bien\n");
-            break;
-        case 'D':
-            printf("Passable\n");
-            break;
-        case 'E':
-            printf("Insuffisant\n");
-            break;
+     switch (appreciation){
+          case 'A':
+               printf("Très bien\n");
+               break;
+          case 'B':
+               printf("Bien\n");
+               break;
+          case 'C':
+               printf("Assez bien\n");
+               break;
+          case 'D':
+               printf("Passable\n");
+               break;
+          case 'E':
+               printf("Insuffisant\n");
+               break;
+          default:
+               printf("Erreur de note\n");
+               break;
+
     }
     return 0;
 }
